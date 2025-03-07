@@ -1,9 +1,9 @@
 <h1 align="center">DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting</h1>
 
 
-Official Pytorch implementation of the paper [**"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**](https://arxiv.org/abs/2304.09502v1) <br>
-[Hyunwoo Park](https://github.com/HWP97?tab=repositories), Gun Ryu, and Wonjun Kim (Corresponding Author) <br>
-🎸 ***IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)***, Jun. 2025. :
+Official Pytorch implementation [**"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**](https://arxiv.org/abs/2304.09502v1) <br>
+[Hyunwoo Park](https://github.com/HWP97?tab=repositories), [Gun Ryu](https://github.com/jerry-ryu), and [Wonjun Kim](https://sites.google.com/view/dcvl/team/professor) (Corresponding Author) <br>
+🎸***IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)***, Jun. 2025.🎸
 
 <p align="center"><img src='documents/fig1.jpg'></p>
 
@@ -18,20 +18,24 @@ Official Pytorch implementation of the paper [**"DropGaussian: Structural Regula
 <!--
 
 _This section will be released soon!_
- ### Try on Google Colab
-It allows you to run the project in the cloud, free of charge.  </br>
-Let's give the prepared [Google Colab demo](https://colab.research.google.com/) a try.
 
  -->
 
 ### Installation
 
-Please refer to [Installation.md](documents/Installation.md) for installation.
+<!--
+
+_This section will be released soon!_
+
+ -->
 
 ### Download
 
-We provide guidelines to download pre-trained models and datasets. </br>
-Please check [Download.md](documents/Download.md) for more information.
+<!--
+
+_This section will be released soon!_
+
+ -->
 
 ### Demo
 
