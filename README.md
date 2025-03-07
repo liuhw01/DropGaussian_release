@@ -1,4 +1,4 @@
-<h1 align="center">DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting</h1>
+<h2 align="center">DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting</h2>
 
 
 Official Pytorch implementation [**"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**](https://arxiv.org/abs/2304.09502v1) <br>
