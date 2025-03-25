@@ -37,50 +37,35 @@ compensation = d(compensation)
 # Apply to opacity
 opacity = opacity * compensation[:, None]
 ```
-
+## ✅ Full implementation
 ### Installation
 
-<!--
+_This section will be released soon!_
+
+
+### Data Preparation
 
 _This section will be released soon!_
 
- -->
 
-### Download
-
-<!--
+### Training
 
 _This section will be released soon!_
 
- -->
 
-### Demo
+### :page_with_curl: Results 
 
-This section is to be updated.
+### Quantitative results
 
-### Experiments
-
-This section is to be updated.
-
-
-## :page_with_curl: Results 
-
-### Quantitative result
-| Model                        | Dataset   | MPJPE | PA-MPJPE | Checkpoint            |
-| ---------------------------- | --------- | ----- | -------- | --------------- |
-| PointHMR-HR32                | Human3.6M |48.3   | 32.9     | [Download](https://drive.google.com/file/d/1Np8SAEFEou2HcfDYH7b1a4rjLI1GnwVQ/view?usp=sharing)|
-| PointHMR-HR32                | 3DPW      |73.9   | 44.9     | [Download]()|
-This section is to be updated.
+_This section will be released soon!_
 
 ### Qualitative results
 
-This section is to be updated.
+_This section will be released soon!_
 
 ## License
 
 This research code is released under the MIT license. Please see [LICENSE](LICENSE) for more information.
-
-We use submodules from third party ([hassony2/manopth](https://github.com/hassony2/manopth)). Please see [NOTICE](documents/NOTICE.md) for more information.
 
 ## Acknowledgments
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2023-NR076462) and Institute of Information Communications Technology Planning Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2018-0-00207, RS-2018-II180207, Immersive Media Research Laboratory).
