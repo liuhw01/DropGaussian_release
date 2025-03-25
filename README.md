@@ -51,15 +51,10 @@ _This section will be released soon!_
 ### Training
 
 _This section will be released soon!_
-
-
-### :page_with_curl: Results 
-
-### Quantitative results
+### Rendering
 
 _This section will be released soon!_
-
-### Qualitative results
+### Evaluation
 
 _This section will be released soon!_
 
