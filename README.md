@@ -11,8 +11,8 @@ Official Pytorch implementation [**"DropGaussian: Structural Regularization for 
 ## :eyes: Overview 
 We propose a simple yet powerful regularization technique, **DropGaussian**, for neural rendering with sparse input views.
 
-By randomly eliminating Gaussians during training, DropGaussian allows the remaining Gaussians to receive stronger gradients, encouraging them to contribute more meaningfully to the optimization process of 3D Gaussian Splatting (3DGS).  
-This approach effectively mitigates overfitting, which is a common issue under sparse-view settings.
+By randomly eliminating Gaussians during the training process, DropGaussian gives the opportunity for the remaining Gaussians to be more visible with larger gradients, which make them to meaningfully contribute to the optimization process of 3DGS.
+This is fairly desirable to alleviate the overfitting problem occurring in sparse-view conditions.
 
 We provide:
 
