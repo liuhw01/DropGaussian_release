@@ -6,7 +6,7 @@ Official Pytorch implementation [**"DropGaussian: Structural Regularization for 
 🎸***IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)***, Jun. 2025.🎸
 
 <p align="center"><img src='figures/Fig1.jpg'></p>
-<p align="center"><img src='figures/Fig2.jpg'></p>
+<p align="center">[ Training pipeline ]</p>
 
 ## :eyes: Overview 
 We propose a simple yet powerful regularization technique, **DropGaussian**, for neural rendering with sparse input views.
