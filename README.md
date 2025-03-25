@@ -8,18 +8,34 @@ Official Pytorch implementation [**"DropGaussian: Structural Regularization for 
 <p align="center"><img src='documents/fig1.jpg'></p>
 
 ## :eyes: Overview 
-- We propose to utilize the correspondence between encoded features and vertex positions, which are projected into the 2D space, via our point-guided feature sampling scheme. By explicitly indicating such vertex-relevant features to the transformer encoder, coordinates of the 3D human mesh are accurately estimated.
-- Our progressive attention masking scheme helps the model efficiently deal with local vertex-to-vertex relations even under complicated poses and occlusions.
+We propose a simple yet powerful regularization technique, **DropGaussian**, for neural rendering with sparse input views.
 
-<p align="center"><img src='documents/fig2.jpg'></p>
+By randomly eliminating Gaussians during training, DropGaussian allows the remaining Gaussians to receive stronger gradients, encouraging them to contribute more meaningfully to the optimization process of 3D Gaussian Splatting (3DGS).  
+This approach effectively mitigates overfitting, which is a common issue under sparse-view settings.
 
+We provide:
 
-## :gear: How to use it 
-<!--
+- ✅ **Full implementation** of DropGaussian
+- ⚡ **Minimal plug-and-play code snippet** for quick integration
 
-_This section will be released soon!_
+## 🚀 Quick Snippet
 
- -->
+Here's a minimal example of how to use `DropGaussian` in your training loop:
+
+```python
+import torch
+# (Assume the rest of the 3DGS pipeline is already set up)
+# Create initial compensation factor (1 for each Gaussian)
+compensation = torch.ones(opacity.shape[0], dtype=torch.float32, device="cuda")
+
+# Apply DropGaussian with compensation
+drop_rate = 0.1
+d = torch.nn.Dropout(p=drop_rate)
+compensation = d(compensation)
+
+# Apply to opacity
+opacity = opacity * compensation[:, None]
+```
 
 ### Installation
 
