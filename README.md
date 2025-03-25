@@ -56,15 +56,11 @@ _This section will be released soon!_
 
 ### Demo
 
-We provide demo codes to run end-to-end inference on the test images. </br>
-
-Please check [Demo.md](documents/Demo.md) for more information.
+This section is to be updated.
 
 ### Experiments
 
-We provide guidelines to train and evaluate our model on Human3.6M and 3DPW. </br>
-
-Please check [Experiments.md](documents/Experiments.md) for more information.
+This section is to be updated.
 
 
 ## :page_with_curl: Results 
@@ -74,37 +70,25 @@ Please check [Experiments.md](documents/Experiments.md) for more information.
 | ---------------------------- | --------- | ----- | -------- | --------------- |
 | PointHMR-HR32                | Human3.6M |48.3   | 32.9     | [Download](https://drive.google.com/file/d/1Np8SAEFEou2HcfDYH7b1a4rjLI1GnwVQ/view?usp=sharing)|
 | PointHMR-HR32                | 3DPW      |73.9   | 44.9     | [Download]()|
+This section is to be updated.
 
 ### Qualitative results
 
-Results on **3DPW** dataset:
-
-<p align="center"><img src='documents/fig3.jpg'></p>
-
-Results on **COCO** dataset:
-
-<p align="center"><img src='documents/fig4.jpg'></p>
+This section is to be updated.
 
 ## License
 
 This research code is released under the MIT license. Please see [LICENSE](LICENSE) for more information.
 
-SMPL and MANO models are subject to **Software Copyright License for non-commercial scientific research purposes**. Please see [SMPL-Model License](https://smpl.is.tue.mpg.de/modellicense.html) and [MANO License](https://mano.is.tue.mpg.de/license.html) for more information.
-
 We use submodules from third party ([hassony2/manopth](https://github.com/hassony2/manopth)). Please see [NOTICE](documents/NOTICE.md) for more information.
 
-
 ## Acknowledgments
-This work was supported by Institute of Information \& communications Technology Planning \& Evaluation(IITP) grant funded by the Korea government(MSIT) (2021-0-02084, eXtended Reality and Volumetric media generation and transmission technology for immersive experience sharing in noncontact environment with a Korea-EU international cooperative research).
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2023-NR076462) and Institute of Information Communications Technology Planning Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2018-0-00207, RS-2018-II180207, Immersive Media Research Laboratory).
 
 Our implementation and experiments are built on top of open-source GitHub repositories. We thank all the authors who made their code public, which tremendously accelerates our project progress. If you find these works helpful, please consider citing them as well.
 
-[microsoft/MeshTransformer](https://github.com/microsoft/MeshTransformer)  </br>
-[microsoft/MeshGraphormer](https://github.com/microsoft/MeshGraphormer)  </br>
-[postech-ami/FastMETRO](https://github.com/postech-ami/FastMETRO)  </br>
-[Arthur151/ROMP](https://github.com/Arthur151/ROMP)  </br>
-
-
+[GraphDeco-INRIA/gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting)  </br>
+[VITA-Group/FSGS](https://github.com/VITA-Group/FSGS)  </br>
 
 ## Citation
 ```bibtex
