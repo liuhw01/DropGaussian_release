@@ -57,21 +57,20 @@ In the data preparation stage, we first reconstruct sparse-view inputs using **S
 <summary><strong> Setup Instructions</strong></summary>
 
 ```bash
-cd FSGS
 mkdir dataset
 cd dataset
 
 # Download LLFF dataset
 gdown 16VnMcF1KJYxN9QId6TClMsZRahHNMW5g
 
-# Generate sparse point cloud using COLMAP (limited views)
+# Generate sparse point cloud using COLMAP (limited views) for LLFF
 python tools/colmap_llff.py
 
 # Download MipNeRF-360 dataset
 wget http://storage.googleapis.com/gresearch/refraw360/360_v2.zip
 unzip -d mipnerf360 360_v2.zip
 
-# Run COLMAP for MipNeRF-360
+# Generate sparse point cloud using COLMAP (limited views) for MipNeRF-360
 python tools/colmap_360.py
 ```
 
@@ -81,9 +80,31 @@ You can download them via the link below:
 👉 [Download Preprocessed Point Clouds](https://drive.google.com/drive/folders/1P3I9m_HU0jF50qwxIIhXhegOVk-kihdI?usp=sharing)
 </details>
 
-### Training
+## ✅ Training
 
-_This section will be released soon!_
+### 🔹 LLFF Dataset
+
+To train on a single LLFF scene, use the following command:
+
+```
+python train.py -s ${DATASET_PATH} -m ${OUTPUT_PATH} --eval -r 8 --n_views {3 or 6 or 9}
+```
+To train and evaluate on **all LLFF scenes**, simply run the script below:
+```
+bash scripts/train_llff.sh
+```
+### 🔹 MipNeRF-360 Dataset
+
+To train on a single MipNeRF-360 scene, use the following command:
+
+```
+python train.py -s ${DATASET_PATH} -m ${OUTPUT_PATH} --eval -r 8 --n_views {12 or 9}
+```
+To train and evaluate on **all MipNeRF-360 scenes**, simply run the script below:
+```
+bash scripts/train_mipnerf360.sh
+```
+
 ### Rendering
 
 _This section will be released soon!_
