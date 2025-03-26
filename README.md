@@ -80,9 +80,9 @@ You can download them via the link below:
 👉 [Download Preprocessed Point Clouds](https://drive.google.com/drive/folders/1P3I9m_HU0jF50qwxIIhXhegOVk-kihdI?usp=sharing)
 </details>
 
-## ✅ Training
+### Training
 
-### 🔹 LLFF Dataset
+#### 🔹 LLFF Dataset
 
 To train on a single LLFF scene, use the following command:
 
@@ -93,7 +93,7 @@ To train and evaluate on **all LLFF scenes**, simply run the script below:
 ```
 bash scripts/train_llff.sh
 ```
-### 🔹 MipNeRF-360 Dataset
+#### 🔹 MipNeRF-360 Dataset
 
 To train on a single MipNeRF-360 scene, use the following command:
 
@@ -105,17 +105,16 @@ To train and evaluate on **all MipNeRF-360 scenes**, simply run the script below
 bash scripts/train_mipnerf360.sh
 ```
 
-## ✅ Rendering & Evaluation
+### Rendering & Evaluation
 You can perform **rendering and evaluation in a single step** using the following command:
-### 🔹 LLFF Dataset
+#### 🔹 LLFF Dataset
 ```
 python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {3 or 6 or 9}
 ```
-### 🔹 MipNeRF-360 Dataset
+#### 🔹 MipNeRF-360 Dataset
 ```
 python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 9}
 ```
-_This section will be released soon!_
 
 ## License
 
