@@ -38,7 +38,7 @@ compensation = d(compensation)
 opacity = opacity * compensation[:, None]
 ```
 ## ✅ Full implementation
-### Installation
+### 📦 Installation
 We provide an installation using Conda package and environment management:
 ```
 git clone https://github.com/DCVL-3D/DropGaussian_release
@@ -49,7 +49,7 @@ conda activate DropGaussian
 
 **Note:** This Conda environment assumes that **CUDA 12.1** is already installed on your system.
 
-### Data Preparation
+### 🗂️ Data Preparation
 
 In the data preparation stage, we first reconstruct sparse-view inputs using **Structure-from-Motion (SfM)** with the provided camera poses from the datasets. Then, we perform dense stereo matching using COLMAP’s `patch_match_stereo` function, followed by `stereo_fusion` to generate the dense stereo point cloud.
 
@@ -80,7 +80,7 @@ You can download them via the link below:
 👉 [Download Preprocessed Point Clouds](https://drive.google.com/drive/folders/1P3I9m_HU0jF50qwxIIhXhegOVk-kihdI?usp=sharing)
 </details>
 
-### Training
+### 🧪 Training
 
 #### 🔹 LLFF Dataset
 
@@ -105,7 +105,7 @@ To train and evaluate on **all MipNeRF-360 scenes**, simply run the script below
 bash scripts/train_mipnerf360.sh
 ```
 
-### Rendering & Evaluation
+### 🎬 Rendering & Evaluation
 You can perform **rendering and evaluation in a single step** using the following command:
 #### 🔹 LLFF Dataset
 ```
