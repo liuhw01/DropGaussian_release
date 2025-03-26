@@ -16,8 +16,8 @@ This is fairly desirable to alleviate the overfitting problem occurring in spars
 
 We provide:
 
+- 🚀 **Minimal plug-and-play code snippet** for quick integration
 - ✅ **Full implementation** of DropGaussian
-- ⚡ **Minimal plug-and-play code snippet** for quick integration
 
 ## 🚀 Quick Snippet
 
@@ -105,11 +105,16 @@ To train and evaluate on **all MipNeRF-360 scenes**, simply run the script below
 bash scripts/train_mipnerf360.sh
 ```
 
-### Rendering
-
-_This section will be released soon!_
-### Evaluation
-
+## ✅ Rendering & Evaluation
+You can perform **rendering and evaluation in a single step** using the following command:
+### 🔹 LLFF Dataset
+```
+python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {3 or 6 or 9}
+```
+### 🔹 MipNeRF-360 Dataset
+```
+python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 9}
+```
 _This section will be released soon!_
 
 ## License
