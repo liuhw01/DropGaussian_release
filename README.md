@@ -118,7 +118,7 @@ python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 9}
 
 ## License
 
-This research code is released under the MIT license. Please see [LICENSE](LICENSE) for more information.
+This research code is released under the MIT license. Please see [LICENSE](LICENSE.md) for more information.
 
 ## Acknowledgments
 This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (RS-2023-NR076462) and Institute of Information Communications Technology Planning Evaluation (IITP) grant funded by the Korea government (MSIT) (No. 2018-0-00207, RS-2018-II180207, Immersive Media Research Laboratory).
