@@ -1,4 +1,4 @@
-expname='mip12'
+exp_name='mip12'
 scenes=("bicycle" "bonsai" "counter" "garden" "kitchen" "room" "stump")
 dataset_path='dataset/mipnerf360'
 n_views=12
