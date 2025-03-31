@@ -212,20 +212,6 @@ class GaussianModel:
         optimizable_tensors = self.replace_tensor_to_optimizer(opacities_new, "opacity")
         self._opacity = optimizable_tensors["opacity"]
 
-    # def reset_opacity(self, train_cams):
-    #     reset_idx = torch.zeros(self.get_opacity.shape[0], dtype=torch.bool)
-    #     for t in train_cams:
-    #         distance = torch.norm(t.camera_center - self.get_xyz, dim=1)
-    #         _, sort_idxs = torch.sort(distance.squeeze(0), descending=True)
-    #         _reset_idx = sort_idxs[:int(self.get_xyz.shape[0]*0.1)]
-    #         reset_idx[_reset_idx] = True
-    #     opacities_new = self.get_opacity
-    #     new_value = inverse_sigmoid(torch.ones(1) * 0.0001)
-    #     opacities_new = inverse_sigmoid(torch.ones_like(self.get_opacity) * 0.01)
-    #     opacities_new[reset_idx] = new_value
-    #     optimizable_tensors = self.replace_tensor_to_optimizer(opacities_new, "opacity")
-    #     self._opacity = optimizable_tensors["opacity"]
-
     def load_ply(self, path):
         plydata = PlyData.read(path)
 
