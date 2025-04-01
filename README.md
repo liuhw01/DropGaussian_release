@@ -98,7 +98,7 @@ bash scripts/train_llff.sh
 To train on a single MipNeRF-360 scene, use the following command:
 
 ```
-python train.py -s ${DATASET_PATH} -m ${OUTPUT_PATH} --eval -r 8 --n_views {12 or 9}
+python train.py -s ${DATASET_PATH} -m ${OUTPUT_PATH} --eval -r 8 --n_views {12 or 24}
 ```
 To train and evaluate on **all MipNeRF-360 scenes**, simply run the script below:
 ```
@@ -109,11 +109,11 @@ bash scripts/train_mipnerf360.sh
 You can perform **rendering and evaluation in a single step** using the following command:
 #### 🔹 LLFF Dataset
 ```
-python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {3 or 6 or 9}
+python render.py -s -m ${MODEL_PATH} --eval -r 8
 ```
 #### 🔹 MipNeRF-360 Dataset
 ```
-python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 24}
+python render.py -s -m ${MODEL_PATH} --eval -r 8
 ```
 
 ## License
