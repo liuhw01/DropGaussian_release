@@ -113,7 +113,7 @@ python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {3 or 6 or 9}
 ```
 #### 🔹 MipNeRF-360 Dataset
 ```
-python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 9}
+python render.py -s -m ${MODEL_PATH} --eval -r 8 --n_views {12 or 24}
 ```
 
 ## License
