@@ -1,7 +1,7 @@
 <h1 align="center">DropGaussian:Structural Regularization<br>for Sparse-view Gaussian Splatting</h1>
 
 
-Official Pytorch implementation **"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**
+Official Pytorch implementation [**"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**](https://arxiv.org/abs/2504.00773)
 [Hyunwoo Park](https://github.com/HWP97?tab=repositories), [Gun Ryu](https://github.com/jerry-ryu), and [Wonjun Kim](https://sites.google.com/view/dcvl) (Corresponding Author) <br>
 🎸***IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)***, Jun. 2025.🎸
 
@@ -132,3 +132,17 @@ Our implementation and experiments are built on top of open-source GitHub reposi
 
 [GraphDeco-INRIA/gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting)  </br>
 [VITA-Group/FSGS](https://github.com/VITA-Group/FSGS)  </br>
+
+## Citation
+If you find our work useful for your project, please consider citing the following paper.
+```
+@misc{park2025dropgaussianstructuralregularizationsparseview,
+      title={DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting}, 
+      author={Hyunwoo Park and Gun Ryu and Wonjun Kim},
+      year={2025},
+      eprint={2504.00773},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2504.00773}, 
+}
+```
