@@ -39,7 +39,7 @@ def render_set(model_path, name, iteration, views, gaussians, pipeline, backgrou
 
     for idx, view in enumerate(tqdm(views, desc="Rendering progress")):
         gt = view.original_image[0:3, :, :].cuda()
-        render_pkg = render(view, gaussians, pipeline, background, False)
+        render_pkg = render(view, gaussians, pipeline, background)
         rendering = render_pkg["render"]
         torchvision.utils.save_image(rendering, os.path.join(render_path, '{0:05d}'.format(idx) + ".png"))
         torchvision.utils.save_image(gt, os.path.join(gts_path, '{0:05d}'.format(idx) + ".png"))
