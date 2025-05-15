@@ -343,8 +343,8 @@ def readReplicaSceneInfo(path, images, eval, n_views=3, llffhold=8):
                              images_folder=os.path.join(path, reading_dir),  path=path, rgb_mapping=rgb_mapping)
     cam_infos = sorted(cam_infos_unsorted.copy(), key = lambda x : x.image_name)
 
-    train_cam_infos = cam_infos[:3]
-    test_cam_infos = cam_infos[3:]
+    train_cam_infos = cam_infos[:2]
+    test_cam_infos = cam_infos[2:]
 
     nerf_normalization = getNerfppNorm(train_cam_infos)
     scene_info = SceneInfo(point_cloud=pcd,
