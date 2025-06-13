@@ -1,6 +1,6 @@
 <h1 align="center">DropGaussian: Structural Regularization<br>for Sparse-view Gaussian Splatting</h1>
 
-**DropGaussian_release/gaussian_renderer/__init__.py:修改**
+`DropGaussian_release/gaussian_renderer/__init__.py:修改`
 
 ```python
 import torch
