@@ -1,5 +1,23 @@
 <h1 align="center">DropGaussian: Structural Regularization<br>for Sparse-view Gaussian Splatting</h1>
 
+‘render.py:修改’
+
+```python
+import torch
+# (Assume the rest of the 3DGS pipeline is already set up)
+# Create initial compensation factor (1 for each Gaussian)
+compensation = torch.ones(opacity.shape[0], dtype=torch.float32, device="cuda")
+
+# Apply DropGaussian with compensation
+drop_rate = 0.1
+d = torch.nn.Dropout(p=drop_rate)
+compensation = d(compensation)
+
+# Apply to opacity
+opacity = opacity * compensation[:, None]
+```
+
+
 Official Pytorch implementation [**"DropGaussian: Structural Regularization for Sparse-view Gaussian Splatting"**](https://arxiv.org/abs/2504.00773)
 [Hyunwoo Park](https://github.com/HWP97?tab=repositories), [Gun Ryu](https://github.com/jerry-ryu), and [Wonjun Kim](https://sites.google.com/view/dcvl) (Corresponding Author) <br>
 🎸***IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)***, Jun. 2025.🎸
